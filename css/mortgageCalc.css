@@ -1,0 +1,30 @@
+body {
+    /* checkered background */
+   background: 
+    repeating-linear-gradient(
+      to right, transparent, 
+      transparent 50px, 
+      white 50px, 
+      white 55px
+    ),
+    repeating-linear-gradient(
+      to bottom, transparent,  
+      transparent 50px, 
+      white 50px, 
+      white 55px
+    ),
+    linear-gradient(45deg, rgb(251, 91, 91), rgb(135, 73, 131));
+ 
+  }
+
+  
+  #basic {
+    align-items: center;
+    display:inline-table; 
+    width: 200px;
+    height: 300px;
+    padding: 100px;
+    margin: 100px;
+    background-color: rgb(255, 188, 166);
+    border: 1px solid rgb(142, 26, 26);
+   }
