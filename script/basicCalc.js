@@ -14,6 +14,8 @@ function init(){
     //wire up the functions to the click of the buttons
     addButton.addEventListener("click", add);
     subtractButton.addEventListener("click", subtract);
+    divideButton.addEventListener("click", divide);
+    multiplyButton.addEventListener("click", multiply);
 
 }
 
@@ -31,7 +33,7 @@ function add(){
     document.querySelector("#answerField").value = result;
 }
 
-//create a subtract function that gets num1 and num2 of the page and subttracts them
+//create a subtract function that gets num1 and num2 of the page and subtracts them
 function subtract(){
 
     //get the values out of the input fields the user types in
@@ -42,5 +44,25 @@ function subtract(){
     let result = number1 - number2;
 
     //put the result in the answer input field
+    document.querySelector("#answerField").value = result;
+}
+
+//create a multiply function that gets num1 and num2 of the page and multiply them
+function multiply (){
+    let number1 = Number( document.querySelector("#number1Field").value );
+    let number2 = Number( document.querySelector("#number2Field").value );
+
+    let result = number1 * number2
+
+    document.querySelector("#answerField").value = result;
+
+}
+//create a divide function that gets num1 and num2 of the page and divide them
+function divide(){
+    let number1 = Number( document.querySelector("#number1Field").value );
+    let number2 = Number( document.querySelector("#number2Field").value );
+
+    let result = number1 / number2
+
     document.querySelector("#answerField").value = result;
 }
