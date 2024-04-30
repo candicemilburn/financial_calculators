@@ -40,22 +40,25 @@
         </div>
     </nav>
 
-<section id="basic">
-    <h2>Monthly Mortgage Payments</h2>
-    <div>
-        APR% (Annual Percentage Rate): <input type="text" id="aprField">
-    </div>
-    <div>
-        Loan Term: <input type="text" id="loantermField">
-    </div>
-    <div>
-        Loan Amount: <input type="text" id="loanamountField">
-    </div>
+<section id="basic" class="w-50 mx-auto">
+    <center><h2>Monthly Mortgage Payments</h2></center>
 
-    <div>
-        <button id="calcButton">Calculate</button>
+    <div class="my-3">
+        <label for="aprField">Interest Rate</label>
+        <input type="number" step=".001" class="form-control" id="aprField">
+      </div>
+      <div class="my-3">
+        <label for="loantermField">Loan Term</label>
+        <input type="number" class="form-control" id="loantermField">
+      </div>
+      <div class="my-3">
+        <label for="loanamountField">Loan Amount</label>
+        <input type="number" class="form-control" id="loanamountField">
+      </div>
+   
+      <div>
+        <button class="btn btn-light" id="calcButton">Calculate</button>
     </div>
-
 
     Monthly Payments: <input type="text" id="result" readonly>
 
@@ -64,7 +67,7 @@
 
     <div>
         <form id="reset">
-            <button id="clearButton" onclick="clearButton()" value="Clear">Clear</button>
+            <button class="btn btn-light" button id="clearButton" onclick="clearButton()" value="Clear">Clear</button>
         </form>
     </div>
 </body>

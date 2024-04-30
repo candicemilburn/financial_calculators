@@ -13,15 +13,14 @@ body {
       white 50px, 
       white 55px
     ),
-    linear-gradient(45deg, rgb(251, 91, 91), rgb(135, 73, 131));
+    linear-gradient(45deg, rgb(255, 233, 105), rgb(255, 128, 17));
  
   }
 
-  
   #basic {
-    width: 200px;
-    height: 450px;
-    margin: 100px;
-    background-color: rgb(255, 188, 166);
-    border: 1px solid rgb(142, 26, 26);
-   }
+   width: 200px;
+   height: 390px;
+   margin: 100px;
+   background-color: rgb(255, 249, 143);
+   border: 1px solid rgb(218, 107, 10);
+  }
